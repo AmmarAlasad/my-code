@@ -14,9 +14,10 @@ print("          .d+      `d+ +hhyyhh+` :d:      -d: /d`       oy     -yyssy/   
 print("                                                                                                     ")
 print("                                                                                                     ")
  
+
 def scan (target):
     converted_ip = check_ip(target)
-    print ("\n"+"[-_0 Scanning the target " + st(target))
+    print ("\n"+"[-_0 Scanning the target " + str(target))
     for port in range(1, 100):
         scan_port(converted_ip, port)
 
@@ -51,4 +52,6 @@ if "," in targets:
         scan(ip_add.strip(" "))
 else:
     scan(targets)
+
+
 
